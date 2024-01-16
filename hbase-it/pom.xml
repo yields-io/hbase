@@ -23,7 +23,7 @@
   <parent>
     <artifactId>hbase-build-configuration</artifactId>
     <groupId>org.apache.hbase</groupId>
-    <version>2.4.9-y1</version>
+    <version>2.4.9-y2</version>
     <relativePath>../hbase-build-configuration</relativePath>
   </parent>
 
@@ -213,6 +213,9 @@
     <dependency>
       <groupId>org.apache.hbase</groupId>
       <artifactId>hbase-testing-util</artifactId>
+      <scope>test</scope>
+      <version>2.4.9-y2</version>
+      <classifier>tests</classifier>
       <exclusions>
         <!--This dependency pulls in hadoop-minicluster
              which pulls in the below. It messes up

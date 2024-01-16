@@ -25,7 +25,7 @@
     <parent>
         <artifactId>hbase-shaded</artifactId>
         <groupId>org.apache.hbase</groupId>
-        <version>2.4.9-y1</version>
+        <version>2.4.9-y2</version>
         <relativePath>..</relativePath>
     </parent>
 
@@ -177,7 +177,8 @@
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-testing-util</artifactId>
             <version>${project.version}</version>
-            <scope>compile</scope>
+             <scope>test</scope>
+          <classifier>tests</classifier>
             <exclusions>
               <exclusion>
                 <groupId>javax.xml.bind</groupId>
